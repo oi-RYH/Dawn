@@ -1,0 +1,6 @@
+Dawn Air model
+
+Original Dawn Air model and material study created in Blender for this project.
+The web model is exported from outputs/dawn-blender/Dawn-Air.blend as dawn-air.glb.
+The device is a visual approximation inspired by the 13-inch MacBook Air M5.
+Three.js license: ../vendor/LICENSE
