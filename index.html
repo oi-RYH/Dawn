@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dawn — 뚜껑과 함께 접히는 화면</title>
+<meta name="description" content="Dawn은 MacBook 힌지 각도를 실시간으로 읽어, 뚜껑이 닫히는 만큼 화면을 접고 어둡게 만드는 macOS 메뉴바 앱입니다." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <nav class="topline">
+    <span class="topline-mark">DAWN</span>
+    <a class="topline-link" href="https://github.com/oi-RYH/dawn" target="_blank" rel="noopener">GitHub ↗</a>
+  </nav>
+
+  <div class="hero-body">
+    <p class="eyebrow">macOS 메뉴바 앱 · Universal (Apple Silicon / Intel)</p>
+    <h1 class="wordmark">Dawn</h1>
+    <p class="tagline">노트북 뚜껑을 닫는 만큼,<br class="br-mobile"> 화면도 함께 접히고 저물어갑니다.</p>
+
+    <div class="cta-row">
+      <a class="cta" id="download-btn" href="Dawn.dmg" download>
+        <span class="cta-icon" aria-hidden="true">⌄</span>
+        <span class="cta-text">
+          <strong>Dawn 다운로드</strong>
+          <small id="cta-meta">v1.0 · Universal · 228KB</small>
+        </span>
+      </a>
+      <p class="req">macOS 14 Sonoma 이상 필요 · Developer ID 서명 &amp; 공증 완료</p>
+    </div>
+  </div>
+</header>
+
+<section class="stage-section">
+  <div class="stage" aria-hidden="true">
+    <div class="stage-frame">
+      <div class="lid">
+        <div class="lid-content"></div>
+        <div class="lid-shade"></div>
+      </div>
+      <div class="hinge"></div>
+      <div class="base"></div>
+    </div>
+    <div class="readout">
+      <span class="readout-label">HINGE ANGLE</span>
+      <span class="readout-value" id="angle-value">92°</span>
+    </div>
+  </div>
+  <p class="stage-caption">실제 힌지 센서 값을 그대로 반영한 투영 · 블러 · 암전 — 타이머가 아닌 각도로 움직입니다.</p>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <span class="feature-num">01</span>
+    <h3>실시간 힌지 감지</h3>
+    <p>Apple 내장 힌지 센서(HID)를 직접 읽어, 실제 뚜껑 각도를 지연 없이 그대로 반영합니다. 정해진 애니메이션이 아닙니다.</p>
+  </div>
+  <div class="feature">
+    <span class="feature-num">02</span>
+    <h3>원근 투영</h3>
+    <p>고정된 수직 평면을 기울어진 실제 디스플레이 위로 투영하는 눈-광선 호모그래피. 90도 이상에서는 원본과 동일합니다.</p>
+  </div>
+  <div class="feature">
+    <span class="feature-num">03</span>
+    <h3>점진적 블러 &amp; 암전</h3>
+    <p>각도가 좁아질수록 블러와 방향성 암전이 부드럽게 진행됩니다. 뚜껑을 다시 열면 지연 없이 즉시 되돌아옵니다.</p>
+  </div>
+</section>
+
+<section class="how">
+  <h2>설치 방법</h2>
+  <ol class="steps">
+    <li><span>1</span>위의 버튼으로 <code>Dawn.dmg</code>를 내려받습니다.</li>
+    <li><span>2</span>디스크 이미지를 열고 <strong>Dawn</strong>을 Applications 폴더로 끌어놓습니다.</li>
+    <li><span>3</span>메뉴바에서 Dawn을 열고 센서를 연결하면 준비 끝입니다.</li>
+  </ol>
+  <p class="privacy-note">화면 캡처 테스트 모드는 내장 디스플레이를 한 번만 캡처해 정적 이미지로 사용하며, 어떤 내용도 저장·업로드되지 않습니다.</p>
+</section>
+
+<footer class="site-footer">
+  <span>Dawn · LidMotion prototype</span>
+  <a href="https://github.com/oi-RYH/dawn" target="_blank" rel="noopener">소스 코드 &amp; 이슈</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
