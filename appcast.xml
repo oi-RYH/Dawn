@@ -3,7 +3,18 @@
   <channel>
     <title>Dawn Updates</title>
     <link>https://oi-ryh.github.io/Dawn/</link>
-    <description>Release feed for Dawn for Mac.</description>
-    <language>ko</language>
-  </channel>
+        <description>Release feed for Dawn for Mac.</description>
+        <language>ko</language>
+        <item>
+            <title>Dawn 1.0.1</title>
+            <pubDate>Sun, 13 Sep 2026 08:22:00 +0000</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <enclosure
+                url="https://oi-ryh.github.io/Dawn/Dawn.dmg"
+                sparkle:edSignature="JTJXdzYmKqqAkHkZJACwdMi6ouhWLdbo+ehYBTaAlm3BUw+eEbKrFtcYxCh9IHeV8RgasRdEaaed+fIz0l5nCw=="
+                length="1446190"
+                type="application/octet-stream" />
+        </item>
+    </channel>
 </rss>
