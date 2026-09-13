@@ -12,7 +12,7 @@ const captions=[...document.querySelectorAll('.caption')];
 const dialog=document.querySelector('#release-dialog');
 let hero,story,frame=0,activeCaption=-1,lastFrameTime=0,displayedAngle=110,asset;
 
-const contentTexture=new THREE.TextureLoader().load('assets/desktop.jpg?v=tahoe-dawn-1',()=>requestFrame());
+const contentTexture=new THREE.TextureLoader().load('assets/desktop.jpg?v=optimized-2560-jpeg-1',()=>requestFrame());
 contentTexture.colorSpace=THREE.SRGBColorSpace;
 contentTexture.anisotropy=4;
 const settings={distortionStrength:1,maximumBlur:18,shadeStrength:.85};
