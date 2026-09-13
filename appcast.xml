@@ -6,6 +6,15 @@
         <description>Release feed for Dawn for Mac.</description>
         <language>ko</language>
         <item>
+            <title>Dawn 1.0.2</title>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <description>실시간 화면 스트림을 적용해 전환 효과 중에도 화면 내용이 갱신됩니다.</description>
+            <enclosure url="https://oi-ryh.github.io/Dawn/Dawn-1.0.2.dmg"
+                sparkle:edSignature="FwNztMFbdUDBVanvgmW3vTMKnwwTibcNbB7U8xH/wDoDfgXwoM91s9Yufy9CCLHo/VPlJ7xn71wwfCvwPP7vAw=="
+                length="1536500" type="application/octet-stream" />
+        </item>
+        <item>
             <title>Dawn 1.0.1</title>
             <pubDate>Sun, 13 Sep 2026 08:22:00 +0000</pubDate>
             <sparkle:version>2</sparkle:version>
