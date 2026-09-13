@@ -50,7 +50,9 @@ function fixedContentMaterial(){
    void main(){
     float y=1.-panelUV.y;
     float angularProgress=clamp((90.-angle)/75.,0.,1.);
-    float radius=maxBlur*angularProgress*(1.-y)/956.;
+    float distanceFromHinge=1.-y;
+    float spatialProgress=(exp(2.*distanceFromHinge)-1.)/(exp(2.)-1.);
+    float radius=maxBlur*angularProgress*spatialProgress/956.;
     vec2 px=vec2(radius*extent.y/extent.x,radius);
     vec3 color=samplePanel(panelUV)*.20;
     color+=samplePanel(panelUV+vec2(px.x,0.))*.10;
