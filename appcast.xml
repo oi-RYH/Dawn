@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Dawn Updates</title>
+    <link>https://oi-ryh.github.io/Dawn/</link>
+    <description>Release feed for Dawn for Mac.</description>
+    <language>ko</language>
+  </channel>
+</rss>
