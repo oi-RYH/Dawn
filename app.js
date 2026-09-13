@@ -93,7 +93,7 @@ function faceOnTilt(eye,focus){
  return 90-THREE.MathUtils.radToDeg(Math.atan2(eye.y-focus.y,eye.z-focus.z));
 }
 
-document.querySelectorAll('[data-download]').forEach(button=>button.addEventListener('click',()=>{location.href='Dawn.dmg'}));
+document.querySelectorAll('[data-download]').forEach(button=>button.addEventListener('click',()=>{location.href='Dawn-1.0.1.dmg'}));
 document.querySelector('.close').addEventListener('click',()=>dialog.close());
 document.querySelector('#dialog-done').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close()});
