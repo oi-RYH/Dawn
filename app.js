@@ -161,11 +161,11 @@ function sceneFor(container,dark){
  const room=new RoomEnvironment();
  const environment=pmrem.fromScene(room,.03);
  scene.environment=environment.texture;
- scene.environmentIntensity=dark?.72:1;
+ scene.environmentIntensity=dark?.36:.5;
  room.dispose();pmrem.dispose();
- const key=new THREE.RectAreaLight(0xffffff,7,13,10);key.position.set(-5,8,9);key.lookAt(0,1,0);scene.add(key);
- const rim=new THREE.RectAreaLight(0xc9d9f4,4,10,4);rim.position.set(5,5,-3);rim.lookAt(0,1,0);scene.add(rim);
- scene.add(new THREE.HemisphereLight(0xffffff,0x778294,.55));
+ const key=new THREE.RectAreaLight(0xffffff,3.5,13,10);key.position.set(-5,8,9);key.lookAt(0,1,0);scene.add(key);
+ const rim=new THREE.RectAreaLight(0xc9d9f4,2,10,4);rim.position.set(5,5,-3);rim.lookAt(0,1,0);scene.add(rim);
+ scene.add(new THREE.HemisphereLight(0xffffff,0x778294,.275));
  const resize=()=>{const width=container.clientWidth,height=container.clientHeight;renderer.setSize(width,height,false);camera.aspect=width/height;camera.updateProjectionMatrix();requestFrame()};
  new ResizeObserver(resize).observe(container);
  function draw(angle,reveal=0){
